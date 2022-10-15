@@ -9,7 +9,7 @@ pip install mysql-connector-python
 
 2. If we are on Linux, and we do not yet have the sakila database imported into mysql, we will have to download it. We can do this with wget in the bash terminal of a Linux system (eg Ubuntu). If we are on Windows, we can think of downloading the Linux Subsystem for Windows (WSL) and carry out the work from there. The WGET command is also in the Cygwin package designed for Windows. We can also use a virtual machine with Ubuntu 20.04 LTS as a guest system or we can look for a solution with docker. However, the database can also be downloaded directly from the URL of the page specified below wget. We think that if we use Jupyter, the exclamation mark allows us to interact with interpretable commands for the SHELL. Take the opportunity to also decompress the database, once it has been downloaded
 
-wget https://downloads.mysql.com/docs/sakila-db.zip
+wget https://downloads.mysql.com/docs/sakila-db.zip \
 unzip sakila-db.zip
 
 3. If we haven't done it yet, you need to install the MySQL Server. This in Ubuntu can be done directly with apt install command. Send errors to /dev/null:
@@ -18,11 +18,12 @@ apt install mysql-server 2> /dev/null
 
 4. Next, we now import the sakila DB into MySQL. First the outline, then the data. We use a login without a password to speed things up, but in a real case you should always have a good password
 
-mysql -u root -p '' sakila < sakila-db/sakila-schema.sql
+mysql -u root -p '' sakila < sakila-db/sakila-schema.sql \
 mysql -u root -p '' sakila < sakila-db/sakila-data.sql
 
 5. Now, open python prompt and import the python-mysql plugin library that we installed in step 1. We take the opportunity to connect to the sakila database, which has already been imported in the previous step.
 
+```python
 import mysql.connector
 
 mydb = mysql.connector.connect(
@@ -31,7 +32,7 @@ mydb = mysql.connector.connect(
   password="",
   database="sakila"
 )
-
+```
 6. Save the query for the actors table in a list called "myresult" and print the data using a loop.
 
 mycursor = mydb.cursor()
