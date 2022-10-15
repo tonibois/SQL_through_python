@@ -105,7 +105,7 @@ df['length'].describe()
 import matplotlib.pyplot as plt
 plt.hist(df['length'])
 ```
-18. However, if we want to characterize the graph with titles on the axes, with a specific width of the bars different from the default, and we also want to save the result in a figure in the same directory of this notebook, we will have to be more specific.
+18. If titles on the axes, specific width of the bars, and saving the result in a figure is required, then we must specify.
 ```python
 plt.figure(figsize=[10,8])
 plt.title('Histograma duracion peliculas - sakila (min)') 
