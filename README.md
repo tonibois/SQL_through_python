@@ -5,7 +5,9 @@ Previous steps for initial requirements are described in the main code. However,
 
 1. install the python-mysql connector library using the CLI terminal (if we don't already have it installed)
 
+```bash
 pip install mysql-connector-python
+```
 
 2. If we are on Linux, and we do not yet have the sakila database imported into mysql, we will have to download it. We can do this with wget in the bash terminal of a Linux system (eg Ubuntu). If we are on Windows, we can think of downloading the Linux Subsystem for Windows (WSL) and carry out the work from there. The WGET command is also in the Cygwin package designed for Windows. We can also use a virtual machine with Ubuntu 20.04 LTS as a guest system or we can look for a solution with docker. However, the database can also be downloaded directly from the URL of the page specified below wget. We think that if we use Jupyter, the exclamation mark allows us to interact with interpretable commands for the SHELL. Take the opportunity to also decompress the database, once it has been downloaded
 ```bash
