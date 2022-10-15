@@ -11,7 +11,7 @@ pip install mysql-connector-python
 
 2. If we are on Linux and we do not yet have the sakila database imported into mysql, we will have to download it. We can do this with wget in the bash terminal of a Linux system (eg Ubuntu). If we are on Windows, we can think of downloading the Linux Subsystem for Windows (WSL) and carry out the work from there. The WGET command is also in the Cygwin package designed for Windows. We can also use a virtual machine with Ubuntu (for instance 20.04 LTS) as a guest system or we can look for a solution with docker. However, the database can also be downloaded directly from the URL of the page specified next to wget command. Rembember that using Jupyter notebook, the exclamation mark allows us to interact with interpretable commands from the SHELL. After download decompress the ZIP file.
 ```bash
-wget https://downloads.mysql.com/docs/sakila-db.zip \
+wget https://downloads.mysql.com/docs/sakila-db.zip 
 unzip sakila-db.zip
 ```
 3. If we haven't done it yet, you need to install the MySQL Server. This in Ubuntu can be done directly with apt install command. Send errors to /dev/null:
