@@ -18,8 +18,10 @@ apt install mysql-server 2> /dev/null
 
 4. Next, we now import the sakila DB into MySQL. First the outline, then the data. We use a login without a password to speed things up, but in a real case you should always have a good password
 
+```bash
 mysql -u root -p '' sakila < sakila-db/sakila-schema.sql \
 mysql -u root -p '' sakila < sakila-db/sakila-data.sql
+```
 
 5. Now, open python prompt and import the python-mysql plugin library that we installed in step 1. We take the opportunity to connect to the sakila database, which has already been imported in the previous step.
 
