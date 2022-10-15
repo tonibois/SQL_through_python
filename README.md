@@ -1,7 +1,7 @@
 # MySQL_db_through_python
 Access to MySQL database sakila using python connector
 
-Previous steps for initial requirements are described in the main code. However, here are again specified. Also, step by step translation to english is provided here.
+Previous steps for initial requirements are described in the main code in catalan. Step by step translation to english is provided here.
 
 1. install the python-mysql connector library using the CLI terminal (if we don't already have it installed)
 
