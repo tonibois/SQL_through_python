@@ -14,7 +14,7 @@ pip install mysql-connector-python
 wget https://downloads.mysql.com/docs/sakila-db.zip 
 unzip sakila-db.zip
 ```
-3. If we haven't done it yet, you need to install the MySQL Server. This in Ubuntu can be done directly with apt install command. Send errors to /dev/null:
+3. If you haven't done it yet, you must install the MySQL Server. This in Ubuntu can be done directly with apt install command. Send errors to /dev/null:
 ```bash
 apt install mysql-server 2> /dev/null
 ```
