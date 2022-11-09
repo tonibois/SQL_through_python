@@ -1,10 +1,9 @@
 # SQL_db_through_python
 
 Two examples of accessing to a database are provided. The first one shows how to access to **MySQL** database *sakila* and make data analysis from actor and film tables.
-This example are further developed in the notebook "".
+This example are further developed in the notebook "MySQL_from_python.ipynb".
 
-The second example shows how to access to *dellstore* **PostgreSQL** database. In that case, it is shown how to analyze products and order tables. This work is performed on 
-file: "connect_postgreSQL_python.ipynb"
+The second example shows how to access to *dellstore* **PostgreSQL** database. In that case, it is shown how to analyze products and order tables. This work is performed on file: "PostgreSQL_from_python.ipynb"
 
 Access to MySQL database sakila using python connector
 
