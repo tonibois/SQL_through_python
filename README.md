@@ -5,7 +5,7 @@ This example are further developed in the notebook "MySQL_from_python.ipynb".
 
 The second example shows how to access to *dellstore* **PostgreSQL** database. In that case, it is shown how to analyze products and order tables. This work is performed on file: "PostgreSQL_from_python.ipynb"
 
-Access to MySQL database sakila using python connector
+Here detailed instructions on how to access to MySQL database sakila using python connector, that are also described in *MySQL_from_python.ipynb*:
 
 Previous steps for initial requirements are described in the main code in catalan. Step by step translation to english is provided here.
 
