@@ -1,4 +1,4 @@
-# SQL_db_through_python
+# SQL_through_python
 
 Two examples of accessing to a database are provided. The first one shows how to access to **MySQL** database *sakila* and make data analysis from actor and film tables.
 This example are further developed in the notebook "MySQL_from_python.ipynb".
